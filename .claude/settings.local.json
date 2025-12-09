@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for file in *)",
+      "Bash(do if [[ -f \"$file\" ]])",
+      "Bash([[ ! \"$file\" =~ .ipynb$ ]])",
+      "Bash(then mv \"$file\" \"$file.ipynb\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(winget install:*)"
+    ]
+  }
+}
